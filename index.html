@@ -1,46 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Proyecto2</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-<div class="gradiente-introduccion"><h1 id="title" class="title">El problema de las clases online</h1>
-  <p id="description" class="description">Las clases online han sido la nueva alternativa para impartir conocimiento para todos los estudiantes a travez de platarformas dijitales, esto ante la gran pandemia mundial que se vive actualmente por el COVID-19</p>
-    </div>
-  <form id="survey-form" class="survey-form">
-    <label for="name" id="name-label" class="name-label">
-    <p class="email-name-text">Nombre:<input name="name" placeholder="Ingresa tu nombre" id="name" class="opciones" type="text" required></p>
-    </label>
-    <label for="email" id="email-label" class="email-label">
-    <p class="email-name-text">Email:
-      <input name="email" placeholder="Correo electronico" id="email" class="opciones" type="email" required></p>
-      </label>
-      <label for="number" id="number-label" class="number-label">
-      <p class="email-name-text">Edad (opcional):<input name="number" placeholder="Edad" id="number" class="opciones" type="number" min="6" max="100" required></p>
-    </label>
-    <label for="dropdown" id="dropdown-label" class="dropdown-label">
-   <div class="email-name-text">
-      <p class="email-name-text">Modelo educativo que tu prefieres:<select placeholder="Selecciona una opción" id="dropdown" class="opciones" name="role"></p>
-        <option value="role">Clases online</option>
-        <option value="role">Clases presenciales</option>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Formulario de registro</title>
+  </head>
+  <body>
+    <section class="formstyle">
+      <div class="form">
+        <form id="survey-form" class="formmaster">
+
+          <div class="titulo">
+          <h1 id="title" class="text">
+            Favor de llenar el formulario a continuacion
+          </h1>
+          <p id="description" class="text">
+            Es necesario que llene estos campos para seguir navegando en esta web
+          </p>
+          </div>
+
+        <div class="nombre-email-edad">
+          <label for="preguntas" class="name-label">
+        <input name="Nombre" class="form1" type="text" id="name" placeholder="Ingrese su Nombre">
+          </label>
+
+          <label for="preguntas" class="email-label">
+        <input name="email" class="form1" type="email" id="email" placeholder="Ingrese su Correo">
+          </label>
+
+          <label for="preguntas" class="number-label">
+        <input name="Edad" class="form1" type="number" id="number" placeholder="Ingrese su Edad" min="6" max="100">
+          </label>
+
+          <select name="servidor" id="dropdown" class="form1" aria-placeholder="Seleccione el Servidor mas Cercano">
+            <option value="servidor" class="text">LAS</option>
+            <option value="servidor" class="text">LAN</option>
+            <option value="servidor" class="text">NA</option>
         </div>
-      </label>
-    <p>Titulo</p>
-    <input type="radio" id="mucha" name="bolita" value="mucha">
-      <label for="mucha">Mucha</label>
-    <br>
-  <input type="radio" id="mas o menos" name="bolita" value="mas o menos">
-      <label for="mas o menos">Mas o menos</label>
-    <br>
-  <input type="radio" id="poca" name="bolita" value="poca">
-      <label for="poca">Poca</label>
-    <br>
-    <br>
-    <input type="submit" id="submit" class="reset">
-    <input type="reset" id="reset" class="reset">
-  </form>
-</body>
+
+        <div class="casillas">
+          <div class="radio">
+            <h2 class="text">Selecciona tu genero</h2>
+
+                <label for="Hombre" class="form1">
+              <input type="radio" name="radio" id="Hombre" > 
+                Hombre</label>
+
+                <label for="Mujer" class="form1">
+              <input type="radio" name="radio" id="Mujer" >
+                Mujer</label>
+
+                <label for="Feminista" class="form1">
+              <input type="radio" name="radio" id="Feminista" >
+                Feminista</label>
+
+            </div>
+
+            <div class="checkbox">
+
+              <h3 class="text">Que te atrae de una persona (puedes seleccionar varias opciones)?</h3>
+
+              <input type="checkbox" value="checkbox" id="bonita personalidad">       
+              <label for="bonita personalidad" class="form1">bonita personalidad</label>    
+
+              <input type="checkbox" value="checkbox" id="guap@">       
+              <label for="guap@" class="form1">guap@</label>    
+
+              <input type="checkbox" value="checkbox" id="atractiv@">       
+              <label for="atractiv@" class="form1">atractiv@</label>    
+
+              <input type="checkbox" value="checkbox" id="divertid@">       
+              <label for="divertid@" class="form1">divertid@</label>    
+
+              <input type="checkbox" value="checkbox" id="detallista">       
+              <label for="detallista" class="form1">detallista</label>    
+
+            </div>
+
+            <div class="text-area">
+
+              <h4 class="text">Comentarios</h4>
+
+              <input type="textarea" id="textarea" placeholder="Ingrese aqui una pequeña opinion de nuestra pagina :D">
+
+            </div>
+        </div>
+
+            <div class="submitarea">
+
+              <input type="submit" class="submit" id="submit">
+              <input type="reset" class="reset" id="reset">
+
+            </div>
+
+        </form>
+      </div>
+    </section>
+  </body>
 </html>
