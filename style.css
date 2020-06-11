@@ -65,6 +65,7 @@ body {
   margin-top: 20px;
   margin-bottom: 20px;
   border-radius: 4px;
+  color: aliceblue;
 }
 #submit, #reset {
   width: 80px;
